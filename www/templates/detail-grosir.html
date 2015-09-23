@@ -1,0 +1,72 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <div class="buttons">
+            <button class="button button-icon button-clear ion-android-arrow-back" ng-click="close()"></button>
+        </div>
+        <h1 class="title">{{data[0].kabkota}}</h1>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item>
+                <div class="item-left">Karkas Sapi</div>
+                <div class="item-right">{{data[0].sapi|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Karkas Kerbau</div>
+                <div class="item-right">{{data[0].kerbau|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Karkas Kambing</div>
+                <div class="item-right">{{data[0].kambing|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Karkas Domba</div>
+                <div class="item-right">{{data[0].domba|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Karkas Ayam Broiler</div>
+                <div class="item-right">{{data[0].ayambroiler|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Karkas Ayam Buras</div>
+                <div class="item-right">{{data[0].ayamburas|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Karkas Itik</div>
+                <div class="item-right">{{data[0].itik|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">DOC Broiler</div>
+                <div class="item-right">{{data[0].docbroiler|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">DOC Layer</div>
+                <div class="item-right">{{data[0].doclayer|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Telur Ayam Ras</div>
+                <div class="item-right">{{data[0].telurayamras|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Telur Ayam Buras</div>
+                <div class="item-right">{{data[0].telurayamburas|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Telur Itik</div>
+                <div class="item-right">{{data[0].teluritik|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Susu Segar</div>
+                <div class="item-right">{{data[0].susu|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Pakan Ternak Broiler</div>
+                <div class="item-right">{{data[0].pakanbroiler|number:0}}</div>
+            </ion-item>
+            <ion-item>
+                <div class="item-left">Pakan Ternak Konsentrat Layer</div>
+                <div class="item-right">{{data[0].pakanlayer|number:0}}</div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

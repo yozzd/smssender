@@ -1,0 +1,26 @@
+.item-left {
+    float: left;
+}
+
+.item-right {
+    float: right;
+}
+
+input[type="text"].has-errors {
+    border-bottom: 2px solid #b94a48;
+}
+
+p.error {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0 12px;
+    min-width: 52px;
+    min-height: 47px;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 47px;
+    background: #f2dede;
+    color: #b94a48;
+    border: 1px solid #ebccd1;
+}

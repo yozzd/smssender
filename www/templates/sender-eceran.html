@@ -1,0 +1,76 @@
+<ion-view view-title="Eceran">
+    <ion-content>
+        <form name="form" ng-submit="submit(form)">
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Daging Sapi Has Dalam</span>
+                    <input type="text" name="sapihasdalam" ng-model="data.sapihasdalam" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.sapihasdalam.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Daging Sapi Bistik</span>
+                    <input type="text" name="sapibistik" ng-model="data.sapibistik" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.sapibistik.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Daging Sapi Murni</span>
+                    <input type="text" name="sapimurni" ng-model="data.sapimurni" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.sapimurni.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Daging Kerbau</span>
+                    <input type="text" name="kerbau" ng-model="data.kerbau" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.kerbau.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Daging Kambing</span>
+                    <input type="text" name="kambing" ng-model="data.kambing" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.kambing.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Daging Domba</span>
+                    <input type="text" name="domba" ng-model="data.domba" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.domba.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Karkas Ayam Broiler</span>
+                    <input type="text" name="ayambroiler" ng-model="data.ayambroiler" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.ayambroiler.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Karkas Ayam Buras</span>
+                    <input type="text" name="ayamburas" ng-model="data.ayamburas" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.ayamburas.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">DOC Broiler</span>
+                    <input type="text" name="docbroiler" ng-model="data.docbroiler" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.docbroiler.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">DOC Layer</span>
+                    <input type="text" name="doclayer" ng-model="data.doclayer" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.doclayer.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Telur Ayam Ras</span>
+                    <input type="text" name="telurayamras" ng-model="data.telurayamras" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.telurayamras.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Telur Ayam Buras</span>
+                    <input type="text" name="telurayamburas" ng-model="data.telurayamburas" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.telurayamburas.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Telur Itik</span>
+                    <input type="text" name="teluritik" ng-model="data.teluritik" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.teluritik.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Susu Segar</span>
+                    <input type="text" name="susu" ng-model="data.susu" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.susu.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Pakan Ternak Broiler</span>
+                    <input type="text" name="pakanbroiler" ng-model="data.pakanbroiler" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.pakanbroiler.$error.pattern && submitted}">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Pakan Ternak Konsentrat Layer</span>
+                    <input type="text" name="pakanlayer" ng-model="data.pakanlayer" ng-pattern="/^(\d)+$/" ng-class="{'has-errors':form.pakanlayer.$error.pattern && submitted}">
+                </label>
+            </div>
+            <div class="padding">
+                <p class="error" ng-show="(form.sapihasdalam.$error.pattern||form.sapibistik.$error.pattern||form.sapimurni.$error.pattern||form.kerbau.$error.pattern||form.kambing.$error.pattern||form.domba.$error.pattern||form.ayambroiler.$error.pattern||form.ayamburas.$error.pattern||form.docbroiler.$error.pattern||form.doclayer.$error.pattern||form.telurayamras.$error.pattern||form.telurayamburas.$error.pattern||form.teluritik.$error.pattern||form.susu.$error.pattern||form.pakanbroiler.$error.pattern||form.pakanlayer.$error.pattern) && submitted">Harus angka</p>
+                <button class="button button-block button-positive" type="submit">Kirim</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,14 @@
+<ion-view view-title="Grosir">
+    <ion-content>
+        <div class="item item-divider">
+            {{tanggal}}
+        </div>
+        <ion-list>
+            <ion-item class="assertive" ng-show="nodata">Tidak ada data</ion-item>
+            <ion-item href="" class="item-icon-right" ng-repeat="data in datas" ng-click="detail(data._id)" ng-show="datas.length>0">
+                {{data.kabkota}}
+                <i class="icon ion-android-arrow-forward"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
